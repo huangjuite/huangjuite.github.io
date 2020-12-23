@@ -51,12 +51,12 @@
                 <div class="wrapper">
                     <div class="page-header page-header-small" filter-color="blue">
                         <div class="page-header-image" data-parallax="true"
-                            style="background-image: url('images/subt-urban-bg.jpg');">
+                            style="background-image: url('images/virtual-subt-bg.png');">
                         </div>
                         <div class="container">
                             <div class="content-center">
-                                <div class="h2 title">DARPA SubT challenge</div>
-                                <p class="category text-white">Urban Circuit - Seatle - 2020</p>
+                                <div class="h2 title">Virtual SubT</div>
+                                <p class="category text-white">deep reinforcement learning</p>
                             </div>
                         </div>
                     </div>
@@ -79,40 +79,39 @@
                     </div>
                 </div>
             </div>
+
             <div class="section" id="mywork">
                 <div class="container">
                     <div class="card" data-aos="fade-up" data-aos-offset="10">
                         <div class="card-body">
-                            <div class="h4 mt-0 title">Our Work</div>
-                            <p>In DARPA SubT urban circuit. My work was to handle the entire system structure
-                                including navigation, localization, artifact report systems and user interface. Also
-                                i'm the human operator who can operate and monitor the robot to autonomously perform
-                                search and rescue during the competition.</p>
-                            <div class="h5 mt-0">Navigation</div>
-                            <p>Autonomously navigate and explore the environment is crucial capability for our
-                                robot. We use deep reinforcement learning algorithms to train an agent navigate
-                                in the environment.</p>
-                            <div class="h5 mt-0">Mapping & Localization</div>
-                            <p>In order to report the position of the artifacts, we need to know the position of our
-                                robots. We use the opensource algorithm: LEGO-LOAM intergrated in our system to
-                                perform simultaneously localization and mapping.
-                            </p>
-                            <div class="h5 mt-0">Object detection</div>
-                            <p>To autonomously detect the designated artifacts in the environment. We implemented
-                                several SOTA object detection and segmentation deep learning algorithms with RGB and
-                                thermal images.</p>
-                            <div class="h5 mt-0">User Interface</div>
-                            <p>Human operator can operate the robot and report the artifacts position to the DARPA
-                                server during the competition. We build an user interface using Qt intergrated with
-                                our system for the human operator to monitor the robot and connect to the DARPA
-                                server.</p>
+                            <div class="h4 mt-0 title">About this project</div>
                             <p>
-                                <a href="https://arg-nctu.github.io/SubT/">Web Page</a>
+                                Deep reinforcement learning (RL) have shown remarkable success on a variety of tasks
+                                to learn from mistakes. To learn collision-free policies for unmanned vehicles, deep
+                                RL has been trained with various data modalities including RGB, depth images, LiDAR
+                                point clouds without the use of classic map-localize-plan approaches. However, to
+                                operate in constrained passages under subterranean environments, existing methods
+                                are suffered from degraded sensing conditions, such as smoke and other obscurants,
+                                that impairs observations from camera and LiDAR. We propose sim-to-real,
+                                LiDAR-to-mmWave (millimeter wave radar) input modality for deep RL to overcome the
+                                challenges. We show that the trained models are generalized from simulation to real
+                                world, as well as LiDAR to mmWave transferring, despite the low spatial resolution
+                                and noisy inputs. Evaluations are carried out in underground environments, including
+                                a basement floor and large-scale testbeds in the Tunnel and Urban Circuits of the
+                                DARPA Subterranean Challenge. We provide an open dataset of real-world data for
+                                further comparisons.
+                            </p>
+                            <p>
+                                <a href="https://arg-nctu.github.io/projects/deeprl-ugv.html">Web Page</a>
+                            </p>
+                            <p>
+                                <a href="images/virtual-subt/iros_ral_2020_mvoa.pdf">Paper</a>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="section" id="photos">
                 <div class="container">
                     <div class="row">
@@ -124,50 +123,28 @@
                         <div class="tab-pane active" id="projects">
                             <div class="ml-auto mr-auto">
                                 <div class="row">
+
                                     <div class="col-md-6">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom">
                                             <figure class="cc-effect">
-                                                <iframe width="540" height="315" allowfullscreen="allowfullscreen"
-                                                    src="https://www.youtube.com/embed/HuJGIAjuxLE">
-                                                </iframe>
+                                                <iframe src="https://player.vimeo.com/video/396074962" width="100%"
+                                                    height="315" allow="autoplay; fullscreen" allowfullscreen></iframe>
                                             </figure>
                                         </div>
                                     </div>
+
                                     <div class="col-md-6">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom">
                                             <figure class="cc-effect">
-                                                <iframe width="540" height="315" allowfullscreen="allowfullscreen"
-                                                    src="https://www.youtube.com/embed/dcPTrH41xaE">
+                                                <iframe width="100%" height="315" allowfullscreen="allowfullscreen"
+                                                    src="https://drive.google.com/file/d/1B_qVpCGN87OiJWfz5FyUgiTCkJjHAtl3/preview">
                                                 </iframe>
                                             </figure>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom">
-                                            <figure class="cc-effect"><img src="images/subt-urban/subt-urban1.jpg"
-                                                    alt="Image" />
-                                                <figcaption>
-                                                    <div class="h4"></div>
-                                                    <p>Urban Circuit - seatle - 2020</p>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom">
-                                            <figure class="cc-effect"><img src="images/subt-urban/subt-urban2.png"
-                                                    alt="Image" />
-                                                <figcaption>
-                                                    <div class="h4"></div>
-                                                    <p>Urban Circuit - seatle - 2020</p>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
+
                                     <div class="col-md-6">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom">
@@ -180,114 +157,124 @@
                                             </figure>
                                         </div>
                                     </div>
+
                                     <div class="col-md-6">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom">
-                                            <figure class="cc-effect"><img src="images/subt-urban/subt-urban4.jpg"
+                                            <figure class="cc-effect"><img src="images/virtual-subt/virtual-subt7.png"
                                                     alt="Image" />
                                                 <figcaption>
                                                     <div class="h4"></div>
-                                                    <p>Urban Circuit - seatle - 2020</p>
+                                                    <p>virtual subt</p>
                                                 </figcaption>
                                             </figure>
                                         </div>
                                     </div>
+
                                     <div class="col-md-6">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom">
-                                            <figure class="cc-effect"><img src="images/subt-urban/subt-urban5.jpg"
+                                            <figure class="cc-effect"><img src="images/virtual-subt/virtual-subt1.png"
                                                     alt="Image" />
                                                 <figcaption>
                                                     <div class="h4"></div>
-                                                    <p>Urban Circuit - seatle - 2020</p>
+                                                    <p>virtual subt</p>
                                                 </figcaption>
                                             </figure>
                                         </div>
                                     </div>
+
                                     <div class="col-md-6">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom">
-                                            <figure class="cc-effect"><img src="images/subt-urban/subt-urban6.jpg"
+                                            <figure class="cc-effect"><img src="images/virtual-subt/virtual-subt2.png"
                                                     alt="Image" />
                                                 <figcaption>
                                                     <div class="h4"></div>
-                                                    <p>Urban Circuit - seatle - 2020</p>
+                                                    <p>virtual subt</p>
                                                 </figcaption>
                                             </figure>
                                         </div>
                                     </div>
+
                                     <div class="col-md-6">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom">
-                                            <figure class="cc-effect"><img src="images/subt-urban/subt-urban7.jpg"
+                                            <figure class="cc-effect"><img src="images/virtual-subt/virtual-subt3.png"
                                                     alt="Image" />
                                                 <figcaption>
                                                     <div class="h4"></div>
-                                                    <p>Urban Circuit - seatle - 2020</p>
+                                                    <p>virtual subt</p>
                                                 </figcaption>
                                             </figure>
                                         </div>
                                     </div>
+
                                     <div class="col-md-6">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom">
-                                            <figure class="cc-effect"><img src="images/subt-urban/subt-urban8.jpg"
+                                            <figure class="cc-effect"><img src="images/virtual-subt/virtual-subt4.png"
                                                     alt="Image" />
                                                 <figcaption>
                                                     <div class="h4"></div>
-                                                    <p>Urban Circuit - seatle - 2020</p>
+                                                    <p>virtual subt</p>
                                                 </figcaption>
                                             </figure>
                                         </div>
                                     </div>
+
                                     <div class="col-md-6">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom">
-                                            <figure class="cc-effect"><img src="images/subt-urban/subt-urban9.jpg"
+                                            <figure class="cc-effect"><img src="images/virtual-subt/virtual-subt5.png"
                                                     alt="Image" />
                                                 <figcaption>
                                                     <div class="h4"></div>
-                                                    <p>Urban Circuit - seatle - 2020</p>
+                                                    <p>virtual subt</p>
                                                 </figcaption>
                                             </figure>
                                         </div>
                                     </div>
+
                                     <div class="col-md-6">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom">
-                                            <figure class="cc-effect"><img src="images/subt-urban/subt-urban10.jpg"
+                                            <figure class="cc-effect"><img src="images/virtual-subt/virtual-subt6.png"
                                                     alt="Image" />
                                                 <figcaption>
                                                     <div class="h4"></div>
-                                                    <p>Urban Circuit - seatle - 2020</p>
+                                                    <p>virtual subt</p>
                                                 </figcaption>
                                             </figure>
                                         </div>
                                     </div>
+
                                     <div class="col-md-6">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom">
-                                            <figure class="cc-effect"><img src="images/subt-urban/subt-urban11.jpg"
+                                            <figure class="cc-effect"><img src="images/virtual-subt/virtual-subt8.png"
                                                     alt="Image" />
                                                 <figcaption>
                                                     <div class="h4"></div>
-                                                    <p>Urban Circuit - seatle - 2020</p>
+                                                    <p>virtual subt</p>
                                                 </figcaption>
                                             </figure>
                                         </div>
                                     </div>
+
                                     <div class="col-md-6">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom">
-                                            <figure class="cc-effect"><img src="images/subt-urban/subt-urban12.jpg"
+                                            <figure class="cc-effect"><img src="images/virtual-subt/virtual-subt9.png"
                                                     alt="Image" />
                                                 <figcaption>
                                                     <div class="h4"></div>
-                                                    <p>Urban Circuit - seatle - 2020</p>
+                                                    <p>virtual subt</p>
                                                 </figcaption>
                                             </figure>
                                         </div>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
