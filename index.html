@@ -116,29 +116,32 @@
                     class="btn btn-default btn-round btn-lg btn-icon"
                     href="https://www.linkedin.com/in/huangjuite/"
                     rel="tooltip"
-                    title="Follow me on LinkedIn"
+                    title="LinkedIn"
                     ><i class="fa fa-linkedin"></i
                   ></a>
                   <a
                     class="btn btn-default btn-round btn-lg btn-icon"
                     href="http://github.com/huangjuite"
                     rel="tooltip"
-                    title="Follow me on Github"
+                    title="Github"
                     ><i class="fa fa-github"></i
                   ></a>
                   <a
                     class="btn btn-default btn-round btn-lg btn-icon"
                     href="https://scholar.google.com/citations?user=79TndBsAAAAJ&hl=en"
                     rel="tooltip"
-                    title="Follow me on Google Scholar"
-                    >
-                    <i class="ai ai-google-scholar ai-2x" style="padding-top: 0.4cm;"></i>
+                    title="Google Scholar"
+                  >
+                    <i
+                      class="ai ai-google-scholar ai-2x"
+                      style="padding-top: 0.4cm"
+                    ></i>
                   </a>
                   <a
                     class="btn btn-default btn-round btn-lg btn-icon"
                     href="https://www.facebook.com/huangjuite"
                     rel="tooltip"
-                    title="Follow me on Facebook"
+                    title="Facebook"
                     ><i class="fa fa-facebook"></i
                   ></a>
                 </div>
@@ -326,7 +329,7 @@
           <div class="h4 text-center mb-4 title">Publication</div>
           <div class="card" data-aos="fade-up" data-aos-offset="10">
             <div class="card-body">
-              <div class="h6 mt-0 title">journal</div>
+              <div class="h6 mt-0 title">Journal</div>
               <p>
                 <li>
                   <b>J.-T. Huang,</b> C.-L. Lu, P.-K. Chang, C.-I Huang, C.-C.
@@ -353,7 +356,7 @@
                   Field Robotics - Special Issue: Advancements and lessons
                   learned during Phase I & II of the DARPA Subterranean
                   Challenge. 2021 <br />
-                  <a href="">accepted</a>
+                  <a href="jfr-subt-nctu.pdf">preprint</a>
                 </li>
               </p>
 
@@ -369,8 +372,14 @@
                 </li>
               </p>
 
-              <br />
-              <div class="h6 mt-0 title">conference</div>
+              <hr
+                style="
+                  color: rgb(112, 112, 112);
+                  background-color: rgb(112, 112, 112);
+                "
+              />
+
+              <div class="h6 mt-0 title">Conference</div>
               <p>
                 <li>
                   N.-C. Lin, Y.-C. Hsiao, Y.-W. Huang, C.-T. Hung, T.-K. Chuang,
@@ -382,6 +391,51 @@
                   Systems. 2019 <br />
                   <a href="https://ieeexplore.ieee.org/document/8967798"
                     >paper</a
+                  >
+                </li>
+              </p>
+
+              <hr
+                style="
+                  color: rgb(112, 112, 112);
+                  background-color: rgb(112, 112, 112);
+                "
+              />
+              <div class="h6 mt-0 title">Talks</div>
+              <p>
+                <li>
+                  <b>J.-T. Huang,</b> C.-C. Hsu, C.-T. Hung, A. Censi, M.
+                  Benjamin, C.-F. Chen, and H.-C. Wang
+                  <br />
+                  “Duckiepond: An Initiative of Education and Research
+                  Environment for a Fleet of Autonomous Maritime Vehicles”
+                  <br />
+                  Sixth Biennial Meeting of MOOS Development and Application
+                  Working Group, Cambridge MA, August, 2019
+                  <br /><a
+                    href="https://oceanai.mit.edu/moos-dawg/pmwiki/pmwiki.php?n=Talk.25-NickWang"
+                    >link</a
+                  >
+                </li>
+              </p>
+
+              <hr
+                style="
+                  color: rgb(112, 112, 112);
+                  background-color: rgb(112, 112, 112);
+                "
+              />
+              <div class="h6 mt-0 title">Under Review</div>
+              <p>
+                <li>
+                  P.-K. Chang, <b>J.-T. Huang,</b> Y.-Y. Huang, and H.-C. Wang
+                  <br />
+                  "Human-to-Robot Handover via Socially-Aware End-to-End
+                  Grasping using Deep Reinforcement Learning and Human
+                  Demonstrations" <br />
+                  IEEE International Conference on Robotics and Automation.
+                  2022<br /><a href="icra2022_socially_aware_handover.pdf"
+                    >preprint</a
                   >
                 </li>
               </p>
@@ -398,7 +452,7 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" id="mmWave">
             <div class="row">
               <div
                 class="col-md-6"
@@ -437,13 +491,37 @@
                     radar data and LiDAR data in the training stage to enable
                     autonomous navigation using radar signal.
                   </p>
-                  <a href="project-mmwave.html">more...</a>
+
+                  <a
+                    class="btn btn-primary"
+                    href="https://ieeexplore.ieee.org/document/9362209"
+                    data-aos="zoom-in"
+                    >Paper
+                  </a>
+                  <a
+                    class="btn btn-primary"
+                    href="https://vimeo.com/468839536"
+                    data-aos="zoom-in"
+                    >Video
+                  </a>
+                  <a
+                    class="btn btn-primary"
+                    data-aos="zoom-in"
+                    href="https://github.com/huangjuite/radar-navigation"
+                    >Github
+                  </a>
+                  <a
+                    class="btn btn-primary"
+                    data-aos="zoom-in"
+                    href="project-mmwave.html"
+                    >More...</a
+                  >
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" id="subtUrban">
             <div class="row">
               <div
                 class="col-md-6"
@@ -467,23 +545,166 @@
               >
                 <div class="card-body">
                   <div class="h5">DARPA SubT Urban Challenge</div>
-                  <p class="category">Urban Circuit - seatle - 2020</p>
+                  <p class="category">Urban Circuit - Seatle - 2020</p>
+                  <p class="category">Journal of Field Robotics - 2021</p>
                   <p>
                     The DARPA Subterranean (SubT) Challenge aims to develop
                     innovative technologies that would augment operations
                     underground. The SubT Challenge will explore new approaches
                     to rapidly map, navigate, search, and exploit complex
-                    underground environments. I participate the Tunnel challenge
-                    with my team and our robots in a decommissioned nuclear
-                    power plant.
+                    underground environments. I participated the Tunnel
+                    challenge with my team and our robots in a decommissioned
+                    nuclear power plant.
                   </p>
-                  <a href="project-subt-urban.html">more...</a>
+                  <a
+                    class="btn btn-primary"
+                    href="jfr-subt-nctu.pdf"
+                    data-aos="zoom-in"
+                    >Preprint
+                  </a>
+                  <a
+                    class="btn btn-primary"
+                    href="https://vimeo.com/501143422"
+                    data-aos="zoom-in"
+                    >Video
+                  </a>
+                  <a
+                    class="btn btn-primary"
+                    data-aos="zoom-in"
+                    href="project-subt-urban.html"
+                    >More...</a
+                  >
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" id="handover">
+            <div class="row">
+              <div
+                class="col-md-6"
+                data-aos="fade-right"
+                data-aos-offset="50"
+                data-aos-duration="500"
+              >
+                <div class="card-body gallery">
+                  <a href="#handover">
+                    <figure class="cc-effect">
+                      <img
+                        src="images/handover/medical_teaser.png"
+                        alt="Image"
+                      />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="col-md-6"
+                data-aos="fade-left"
+                data-aos-offset="50"
+                data-aos-duration="500"
+              >
+                <div class="card-body">
+                  <div class="h5">
+                    Human-to-Robot Handover via Socially-Aware End-to-End
+                    Grasping
+                  </div>
+                  <p class="category">
+                    Submited to IEEE Robotics and Automation Letters - 2022
+                  </p>
+                  <p>
+                    We present our socially-aware end-to-end grasping for
+                    human-to-robot handover. We first leverage existing
+                    end-to-end grasping as network backbone, and then finetune
+                    for non-invasive grasps and trajectories using sample
+                    efficient deep reinforcement learning. Comprehensive
+                    evaluations are carried out against various recent baselines
+                    using multi-stage hand and object prediction and subsequent
+                    planning.
+                  </p>
+
+                  <a
+                    class="btn btn-primary"
+                    href="icra2022_socially_aware_handover.pdf"
+                    data-aos="zoom-in"
+                    >Preprint
+                  </a>
+                  <a
+                    class="btn btn-primary"
+                    href="https://vimeo.com/600946633"
+                    data-aos="zoom-in"
+                    >Video
+                  </a>
+                  <a
+                    class="btn btn-primary"
+                    href="https://arg-nctu.github.io/projects/socially-aware-handover.html"
+                    data-aos="zoom-in"
+                    >Web
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="blindnav">
+            <div class="row">
+              <div
+                class="col-md-6"
+                data-aos="fade-right"
+                data-aos-offset="50"
+                data-aos-duration="500"
+              >
+                <div class="card-body gallery">
+                  <a href="#blindnav">
+                    <figure class="cc-effect">
+                      <img
+                        src="images/blind-nav/teaser-guiding.jpeg"
+                        alt="Image"
+                      />
+                    </figure>
+                  </a>
+                </div>
+              </div>
+              <div
+                class="col-md-6"
+                data-aos="fade-left"
+                data-aos-offset="50"
+                data-aos-duration="500"
+              >
+                <div class="card-body">
+                  <div class="h5">
+                    Assistive Navigation using Deep Reinforcement Learning
+                    Guiding Robot
+                  </div>
+                  <p class="category">Frontier in Robotics and AI - 2021</p>
+                  <p>
+                    Facilitating navigation in pedestrian environments is
+                    critical for enabling people who are blind and visually
+                    impaired (BVI) to achieve independent mobility. A
+                    deep-reinforcement-learning-based assistive guiding robot
+                    with ultrawide-bandwidth (UWB) beacons that can navigate
+                    through routes with designated waypoints was designed in
+                    this study.
+                  </p>
+
+                  <a
+                    class="btn btn-primary"
+                    href="https://www.frontiersin.org/articles/10.3389/frobt.2021.654132/full"
+                    data-aos="zoom-in"
+                    >Paper
+                  </a>
+                  <a
+                    class="btn btn-primary"
+                    href="https://arg-nctu.github.io/projects/guiding_robot_uwb.html"
+                    data-aos="zoom-in"
+                    >Web
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="subtTunnel">
             <div class="row">
               <div
                 class="col-md-6"
@@ -507,7 +728,7 @@
               >
                 <div class="card-body">
                   <div class="h5">DARPA SubT Tunnel Challenge</div>
-                  <p class="category">Tunnel Circuit - pittsburgh - 2019</p>
+                  <p class="category">Tunnel Circuit - Pittsburgh - 2019</p>
                   <p>
                     The DARPA Subterranean (SubT) Challenge aims to develop
                     innovative technologies that would augment operations
@@ -517,13 +738,24 @@
                     with my team and our robots to perform search and rescue
                     mission in a mine tunnel.
                   </p>
-                  <a href="project-subt-tunnel.html">more...</a>
+                  <a
+                    class="btn btn-primary"
+                    href="https://arxiv.org/abs/1910.14275"
+                    data-aos="zoom-in"
+                    >Arxiv
+                  </a>
+                  <a
+                    class="btn btn-primary"
+                    data-aos="zoom-in"
+                    href="project-subt-tunnel.html"
+                    >More...</a
+                  >
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" id="duckiepond">
             <div class="row">
               <div
                 class="col-md-6"
@@ -560,13 +792,36 @@
                     vehicles with deep learning computer vision with sensors on
                     board.
                   </p>
-                  <a href="project-duckiepond.html">more...</a>
+                  <a
+                    class="btn btn-primary"
+                    href="https://ieeexplore.ieee.org/document/8967798"
+                    data-aos="zoom-in"
+                    >Paper
+                  </a>
+                  <a
+                    class="btn btn-primary"
+                    href="https://robotx-nctu.github.io/duckiepond"
+                    data-aos="zoom-in"
+                    >Web
+                  </a>
+                  <a
+                    class="btn btn-primary"
+                    href="https://github.com/RobotX-NCTU/duckiepond-nctu"
+                    data-aos="zoom-in"
+                    >Github
+                  </a>
+                  <a
+                    class="btn btn-primary"
+                    data-aos="zoom-in"
+                    href="project-duckiepond.html"
+                    >More...</a
+                  >
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="card">
+          <div class="card" id="robotx">
             <div class="row">
               <div
                 class="col-md-6"
@@ -592,23 +847,40 @@
                   <div class="h5">RobotX Challenge</div>
                   <p class="category">Hawaii- 2018</p>
                   <p>
-                    We participate the 2018 RobotX competition and awarded
+                    We participated in the 2018 RobotX competition and awarded
                     number 5th at the final stage. We built a surface vehicle to
                     solve multiple tasks including autonomous docking,
                     navigation, obstacle avoidance, launch & recovery, scan code
                     and acoustic pinging.
                   </p>
-                  <a href="project-robotx.html">more...</a>
+                  <a
+                    class="btn btn-primary"
+                    href="https://arxiv.org/abs/1910.14540"
+                    data-aos="zoom-in"
+                    >Arxiv
+                  </a>
+                  <a
+                    class="btn btn-primary"
+                    href="https://robotx-nctu.github.io/"
+                    data-aos="zoom-in"
+                    >Web
+                  </a>
+                  <a
+                    class="btn btn-primary"
+                    data-aos="zoom-in"
+                    href="project-robotx.html"
+                    >More...</a
+                  >
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="tab-content gallery mt-5">
+          <div class="tab-content gallery mt-5" id="petProject">
             <div class="tab-pane active" id="projects">
               <div class="ml-auto mr-auto">
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-4" id="virtualSubt">
                     <div
                       class="cc-porfolio-image img-raised"
                       data-aos="fade-up"
@@ -626,7 +898,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md-4">
+                  <div class="col-md-4" id="ecgid">
                     <div
                       class="cc-porfolio-image img-raised"
                       data-aos="fade-up"
@@ -644,7 +916,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md-4">
+                  <div class="col-md-4" id="selfDrivingCar">
                     <div
                       class="cc-porfolio-image img-raised"
                       data-aos="fade-up"
@@ -662,7 +934,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md-4">
+                  <div class="col-md-4" id="balanbot">
                     <div
                       class="cc-porfolio-image img-raised"
                       data-aos="fade-up"
@@ -680,7 +952,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md-4">
+                  <div class="col-md-4" id="space">
                     <div
                       class="cc-porfolio-image img-raised"
                       data-aos="fade-up"
@@ -698,7 +970,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md-4">
+                  <div class="col-md-4" id="ltspice">
                     <div
                       class="cc-porfolio-image img-raised"
                       data-aos="fade-up"
@@ -718,7 +990,7 @@
                     </div>
                   </div>
 
-                  <div class="col-md-4">
+                  <div class="col-md-4" id="cctan">
                     <div
                       class="cc-porfolio-image img-raised"
                       data-aos="fade-up"
