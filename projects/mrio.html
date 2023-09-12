@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta
       name="description"
-      content="Loosely Coupled Multi-Radar Inertial Odometry using Imaging Radars."
+      content="Multi-Radar Inertial Odometry using mmWave Imaging Radar."
     />
     <meta name="keywords" content="SLAM, Radar, Inertial, Doppler" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -79,8 +79,7 @@
           <div class="columns is-centered">
             <div class="column has-text-centered">
               <h1 class="title is-1 publication-title">
-                Loosely Coupled Multi-Radar Inertial Odometry using Imaging
-                Radars
+                Multi-Radar Inertial Odometry using mmWave Imaging Radar
               </h1>
 
               <div class="is-size-5 publication-authors">
@@ -136,7 +135,7 @@
                   </span>
 
                   <!-- Code Link. -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a
                       href=" "
                       class="external-link button is-normal is-rounded is-dark"
@@ -146,10 +145,10 @@
                       </span>
                       <span>Code</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Dataset Link. -->
-                  <span class="link-block">
+                  <!-- <span class="link-block">
                     <a
                       href=" "
                       class="external-link button is-normal is-rounded is-dark"
@@ -157,7 +156,7 @@
                       <span class="icon"><i class="far fa-images"></i> </span>
                       <span>Data</span>
                     </a>
-                  </span>
+                  </span> -->
                 </div>
               </div>
             </div>
@@ -177,26 +176,25 @@
                 In the world of robotics, state estimation is a crucial task,
                 relying on sensors like cameras, LiDAR, and IMUs. However,
                 challenging environments, such as those with adverse weather
-                conditions and low-light scenarios, often degrade these sensors’
-                performance. The emerging 4D imaging radar tech- nology is
-                capable of providing robust perception in adverse conditions.
-                Despite its potential, several challenges remain, particularly
-                in indoor settings with limited apparent geometric features.
-                Moreover, disparities in radar data resolution and field of view
-                can lead to inaccurate measurements. While prior research has
-                explored radar-inertial odometry based on Doppler velocity
-                information, challenges remain for the estimation of 3D motion
-                because of the discrepancy in the field of view and resolution
-                of the radar sensor. In this paper, we studied the uncertainty
-                in Doppler velocity measurements. We discussed a method to
-                optimize body frame velocity and the resulting uncertainty using
-                Doppler velocity information. Based on our observations of the
-                evaluated uncertainty, we proposed a dual-imaging radar
-                configuration to compensate for it. To achieve precise 3D state
-                estimation, we introduced a fixed-lag smoother optimization
-                strategy that seamlessly integrates all radar data with a
-                consumer-grade IMU sensor. Finally, we evaluated our method
-                using real-world 3D motion data.
+                conditions and low-light scenarios, often degrade these sensors'
+                performance. The emerging 4D imaging radar technology is capable
+                of providing robust perception in adverse conditions. Despite
+                its potential, several challenges remain, particularly in indoor
+                settings with limited apparent geometric features. Moreover,
+                disparities in radar data resolution and field of view can lead
+                to inaccurate measurements. While prior research has explored
+                radar-inertial odometry based on Doppler velocity information,
+                challenges remain for the estimation of 3D motion because of the
+                discrepancy in the field of view and resolution of the radar
+                sensor. In this paper, we address Doppler velocity measurement
+                uncertainties. We present a method to optimize body frame
+                velocity while managing Doppler velocity uncertainty. Based on
+                our observations, we propose a dual imaging radar configuration
+                to mitigate the challenge of discrepancy in radar data. To
+                attain precise 3D state estimation, we introduce a fixed-lag
+                smoother optimization strategy that seamlessly integrates radar
+                data with a consumer-grade IMU sensor. Finally, we evaluate our
+                approach using real-world 3D motion data.
               </p>
 
               <!-- <p>
@@ -237,7 +235,7 @@
         </div>
         &nbsp
 
-        <div class="columns is-centered has-text-centered">
+        <!-- <div class="columns is-centered has-text-centered">
           <div class="content">
             <h2 class="title is-3">Simulated Experiments (HoloOcean)</h2>
             <p>
@@ -259,7 +257,7 @@
             </video>
           </div>
         </div>
-        &nbsp
+        &nbsp -->
       </div>
 
       <!--/ Paper video. -->
