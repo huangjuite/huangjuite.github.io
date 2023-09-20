@@ -124,7 +124,7 @@
                   <!-- Video Link. -->
                   <span class="link-block">
                     <a
-                      href=" "
+                      href="https://youtu.be/77BCIcAVsrY?si=atMGaaja7iELafQX"
                       class="external-link button is-normal is-rounded is-dark"
                     >
                       <span class="icon">
@@ -173,28 +173,30 @@
             <h2 class="title is-3">Abstract</h2>
             <div class="content has-text-justified">
               <p>
-                In the world of robotics, state estimation is a crucial task,
-                relying on sensors like cameras, LiDAR, and IMUs. However,
-                challenging environments, such as those with adverse weather
-                conditions and low-light scenarios, often degrade these sensors'
-                performance. The emerging 4D imaging radar technology is capable
+                State estimation is a crucial component for the successful
+                implementation of robotic systems, relying on sensors such as
+                cameras, LiDAR, and IMUs. However, in real-world scenarios, the
+                performance of these sensors is degraded by challenging
+                environments, e.g. adverse weather conditions and low-light
+                scenarios. The emerging 4D imaging radar technology is capable
                 of providing robust perception in adverse conditions. Despite
-                its potential, several challenges remain, particularly in indoor
-                settings with limited apparent geometric features. Moreover,
-                disparities in radar data resolution and field of view can lead
-                to inaccurate measurements. While prior research has explored
-                radar-inertial odometry based on Doppler velocity information,
-                challenges remain for the estimation of 3D motion because of the
-                discrepancy in the field of view and resolution of the radar
-                sensor. In this paper, we address Doppler velocity measurement
-                uncertainties. We present a method to optimize body frame
-                velocity while managing Doppler velocity uncertainty. Based on
-                our observations, we propose a dual imaging radar configuration
-                to mitigate the challenge of discrepancy in radar data. To
-                attain precise 3D state estimation, we introduce a fixed-lag
-                smoother optimization strategy that seamlessly integrates radar
-                data with a consumer-grade IMU sensor. Finally, we evaluate our
-                approach using real-world 3D motion data.
+                its potential, challenges remain for indoor settings where noisy
+                radar data does not present clear geometric features. Moreover,
+                disparities in radar data resolution and field of view (FOV) can
+                lead to inaccurate measurements. While prior research has
+                explored radar-inertial odometry based on Doppler velocity
+                information, challenges remain for the estimation of 3D motion
+                because of the discrepancy in the FOV and resolution of the
+                radar sensor. In this paper, we address Doppler velocity
+                measurement uncertainties. We present a method to optimize body
+                frame velocity while managing Doppler velocity uncertainty.
+                Based on our observations, we propose a dual imaging radar
+                configuration to mitigate the challenge of discrepancy in radar
+                data. To attain high-precision 3D state estimation, we introduce
+                a strategy that seamlessly integrates radar data with a
+                consumer-grade IMU sensor using fixed-lag smoothing
+                optimization. Finally, we evaluate our approach using real-world
+                3D motion data.
               </p>
 
               <!-- <p>
@@ -214,6 +216,7 @@
                   A regularized rendering loss for 3D reconstruction using
                 </li>
               </ul> -->
+              
             </div>
           </div>
         </div>
@@ -225,7 +228,7 @@
             <h2 class="title is-3">Video</h2>
             <div class="publication-video">
               <iframe
-                src="https://www.youtube.com/embed/hjWDxje_xPs?rel=0&amp;showinfo=0"
+                src="https://www.youtube.com/embed/77BCIcAVsrY?si=Is1hNDDkYILezY7y;showinfo=0"
                 frameborder="0"
                 allow="autoplay; encrypted-media"
                 allowfullscreen
@@ -260,10 +263,9 @@
         &nbsp -->
       </div>
 
-      <!--/ Paper video. -->
     </section>
 
-    <section class="section" id="BibTeX">
+    <!-- <section class="section" id="BibTeX">
       <div class="container is-max-desktop content">
         <h2 class="title">BibTeX</h2>
         <pre><code>@article{qadri2022neural,
@@ -273,20 +275,12 @@
   year={2022}
 }</code></pre>
       </div>
-    </section>
+    </section> -->
 
     <footer class="footer">
       <div class="container">
-        <!-- <div class="content has-text-centered">
-          <a
-            class="icon-link"
-            href="https://www.cs.cmu.edu/~mqadri/"
-            class="external-link"
-            disabled
-          >
-            <i class="fab fa-github"></i>
-          </a>
-        </div> -->
+        
+
         <div class="columns is-centered">
           <div class="column is-8">
             <div class="content">
@@ -297,6 +291,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </footer>
   </body>
