@@ -1,0 +1,17 @@
+[workspace]
+channels = ["conda-forge"]
+name = "huangjuite.github.io"
+platforms = ["linux-64", "osx-64", "osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+install = "bundle config set --local path 'vendor/bundle' && bundle install"
+serve = "bundle exec jekyll serve -l -H localhost"
+build = "bundle exec jekyll build"
+
+[dependencies]
+c-compiler = ">=2.0.0,<3"
+cxx-compiler = ">=2.0.0,<3"
+make = ">=4.4.1,<5"
+ruby = "3.3.*"
+imagemagick = ">=7,<8"

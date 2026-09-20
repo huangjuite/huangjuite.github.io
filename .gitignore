@@ -1,0 +1,20 @@
+.claude/
+.vscode/
+.DS_Store
+
+# Jekyll build artifacts
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler
+.bundle/
+vendor/bundle/
+
+# npm
+node_modules/
+
+# pixi environments
+.pixi/*
+!.pixi/config.toml

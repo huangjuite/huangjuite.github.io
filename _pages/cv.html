@@ -1,0 +1,24 @@
+---
+# Redirect-only stub: "CV" nav item opens the PDF, via a tiny instant redirect
+# page (not linked to /assets/pdf/cv.pdf directly — that permalink would
+# collide with the real static PDF file at build time; Jekyll flagged it as
+# an unresolved "Conflict: shared destination" with non-deterministic output).
+# Plain .html (not .md) so Jekyll doesn't run this raw HTML through Kramdown.
+layout: null
+title: CV
+nav: true
+nav_order: 4
+permalink: /cv/
+sitemap: false
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; url=/assets/pdf/cv.pdf" />
+    <link rel="canonical" href="/assets/pdf/cv.pdf" />
+  </head>
+  <body>
+    Redirecting to <a href="/assets/pdf/cv.pdf">CV (PDF)</a>...
+  </body>
+</html>
