@@ -1,0 +1,183 @@
+% CV of Jui-Te "Ray" Huang
+% Build: pixi run cv  (writes assets/pdf/JuiTe_cv.pdf, the PDF the site serves)
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper, margin=0.65in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Section headings: bold, underlined with a full-width rule
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{-0.6em}\rule{\textwidth}{0.8pt}]
+\titlespacing*{\section}{0pt}{1.0em}{0.5em}
+
+% Bullet lists
+\setlist[itemize]{leftmargin=1.4em, itemsep=0pt, topsep=1pt, parsep=0pt}
+\setlist[itemize,1]{label=\textbullet}
+\setlist[itemize,2]{label=$\circ$, leftmargin=1.2em}
+
+% \entry{left bold}{right bold}
+\newcommand{\entry}[2]{\textbf{#1}\hfill\textbf{#2}\\}
+% \me{name} highlights my name in publication lists
+\newcommand{\me}[1]{\textbf{#1}}
+
+\begin{document}
+
+%-------------------------------------------------------------------- Header
+\begin{center}
+  {\LARGE\bfseries Jui-Te `Ray' Huang}
+\end{center}
+\vspace{-0.3em}
+Webpage: https://huangjuite.github.io
+\hfill
+Email: juiteh@andrew.cmu.edu
+
+%-------------------------------------------------------------------- Education
+\section{Education}
+\entry{Carnegie Mellon University}{Pittsburgh, PA}
+PhD in Robotics \hfill \textbf{Current}\\
+MS in Robotics (MSR) \hfill \textbf{May 2024}
+
+\medskip
+\entry{National Yang Ming Chiao Tung University}{Hsinchu, Taiwan}
+BS, MS in Electrical and Computer Engineering \hfill \textbf{Aug.\ 2021}
+
+%-------------------------------------------------------------------- Experience
+\section{Experience}
+\entry{Research Assistant, Carnegie Mellon University}{Sep.\ 2022 -- present, Pittsburgh, PA}
+Robot Perception Lab, advised by Prof.\ Michael Kaess.
+\begin{itemize}
+  \item Radar-Inertial State Estimation and Mapping using mmWave Imaging Radar.
+  \begin{itemize}
+    \item Research on robust state estimation in adverse environmental conditions.
+    \item Research on learning-based radar signal processing for state estimation.
+    \item Implemented radar-visual-inertial sensor fusion state estimation.
+    \item Developed a large-scale outdoor SLAM system using multiple high-resolution imaging radars.
+  \end{itemize}
+  \item GPU-accelerated radar signal processing.
+  \begin{itemize}
+    \item Implemented a MIMO signal processing pipeline that generates radar point clouds from raw digital signals.
+    \item Implemented Synthetic Aperture Radar algorithms to create mmWave radar occupancy maps.
+  \end{itemize}
+  \item Built a multi-modal sensor rig (radar, LiDAR, stereo RGB/thermal/event cameras) and co-led a large-scale data collection campaign.
+\end{itemize}
+
+\medskip
+\entry{Research Intern, Bosch Research USA}{May 2026 -- Aug.\ 2026, Pittsburgh, PA}
+\mbox{}\hfill\textbf{May 2025 -- Aug.\ 2025, Pittsburgh, PA}
+\begin{itemize}
+  \item Developed a conditional latent diffusion model that synthesizes complex-valued, multi-antenna
+    range--Doppler radar spectra from lidar, camera, ego-motion, and radar waveform parameters.
+  \item Used a phase-preserving spectrum autoencoder with a flow-matching diffusion transformer, so
+    generated spectra can be processed with standard radar signal processing and pretrained networks.
+  \item Generated raw radar spectra from CARLA simulator scenes; augmenting radar foundation model
+    training with generated data gave gains on the I/Q-1M dataset equivalent to $2\times$ data scaling.
+  \item Built a large-scale training and evaluation pipeline; paper in submission.
+\end{itemize}
+
+\medskip
+\entry{Research Intern, University of Washington}{Sep.\ 2021 -- Feb.\ 2022, Seattle, WA}
+Information Processing Lab, advised by Prof.\ Jenq-Neng Hwang.
+\begin{itemize}
+  \item Built and calibrated a sensor system to collect synchronized data for radar multi-object tracking.
+  \item Learning-based multi-object detection and tracking using mmWave imaging radar.
+  \item 3D multi-object tracking using LiDAR and visual depth estimation.
+\end{itemize}
+
+\medskip
+\entry{Research Assistant, National Chiao Tung University}{Jun.\ 2018 -- Aug.\ 2021, Hsinchu, Taiwan}
+Assistive Robotics Group, advised by Prof.\ Hsueh-Cheng Wang.
+\begin{itemize}
+  \item DARPA Subterranean Challenge, SLAM and Deep Reinforcement Learning Navigation.
+  \begin{itemize}
+    \item Research on navigation using sim-to-real deep reinforcement learning.
+    \item Research on cross-modal learning to navigate robots through smoke using mmWave radar.
+    \item Team NCTU, Software Team Lead and Human Supervisor in SubT Challenge: Urban Circuit.
+    \item Implemented a LiDAR SLAM system for large-scale underground environments.
+  \end{itemize}
+  \item Maritime RobotX Challenge, Autonomous Surface Vehicle.
+  \begin{itemize}
+    \item Built the sensor and computation system for an autonomous boat (WAM-V).
+  \end{itemize}
+\end{itemize}
+
+%-------------------------------------------------------------------- Interests
+\section{Research Interests}
+Radar Perception, SLAM, State Estimation, Generative Sensor Simulation, Multi-Modal Learning, Field Robotics
+
+%-------------------------------------------------------------------- Publications
+\section{Selected Projects \& Publications}
+\begin{itemize}[itemsep=4pt]
+  \item \textbf{Radar-Inertial Odometry and Mapping}
+  \begin{itemize}[itemsep=3pt]
+    \item \me{Jui-Te Huang}, Tianshu Huang, Anthony Rowe, and Michael Kaess,
+      ``UNRIO: Uncertainty-Aware Velocity Learning for Radar-Inertial Odometry,''
+      in submission, 2026. \textbf{Best Student Poster}, ICRA 2026 Radar in Robotics Workshop.
+    \item \me{Jui-Te Huang*}, Ruoyang Xu*.
+      \"Orebro 4D-Radar SLAM Challenge, \textbf{1st place}. ICRA 2026 Radar in Robotics Workshop.
+    \item \me{Jui-Te Huang}, Ruoyang Xu, and Michael Kaess,
+      ``Millimeter Wave Radar: From Synthetic Aperture to Probabilistic Mapping,''
+      \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 2026.
+    \item \me{Jui-Te Huang}, Ruoyang Xu, Akshay Hinduja, and Michael Kaess,
+      ``Multi-Radar Inertial Odometry for 3D State Estimation using mmWave Imaging Radar,''
+      \textit{IEEE International Conference on Robotics and Automation (ICRA)}, 2024.
+  \end{itemize}
+
+  \item \textbf{Radar Multi-Object Tracking for Autonomous Driving}
+  \begin{itemize}
+    \item Y.~Wang, J.-H.~Cheng, \me{J.-T.~Huang}, S.-Y.~Kuan, Q.~Fu, C.~Ni, S.~Hao, G.~Wang,
+      G.~Xing, H.~Liu, and J.-N.~Hwang,
+      ``Vision meets mmWave Radar: 3D Object Perception Benchmark for Autonomous Driving,''
+      \textit{IEEE Intelligent Vehicles Symposium (IV)}, 2023.
+  \end{itemize}
+
+  \item \textbf{Search and Rescue in DARPA Subterranean Challenge}
+  \begin{itemize}
+    \item C.-L.~Lu*, \me{J.-T.~Huang*}, et al.,
+      ``A Heterogeneous Unmanned Ground Vehicle and Blimp Robot Team for Search and Rescue
+      using Data-driven Autonomy and Communication-aware Navigation,''
+      \textit{Field Robotics, Special Issue: Advancements and Lessons Learned during Phase I \& II
+      of the DARPA Subterranean Challenge}, 2022. (*Equal contribution)
+  \end{itemize}
+
+  \item \textbf{Cross-modal Learning and Reinforcement Learning for Navigation}
+  \begin{itemize}[itemsep=3pt]
+    \item \me{J.-T.~Huang}, C.-L.~Lu, P.-K.~Chang, C.-I~Huang, C.-C.~Hsu, Z.~L.~Ewe, P.-J.~Huang,
+      and H.-C.~Wang,
+      ``Cross-Modal Contrastive Learning of Representations for Navigation using Lightweight,
+      Low-Cost Millimeter Wave Radar for Adverse Environmental Conditions,''
+      \textit{IEEE Robotics and Automation Letters (RA-L)}, 6(2), 3333--3340, 2021.
+    \item C.-L.~Lu, Z.-Y.~Liu, \me{J.-T.~Huang}, C.-I~Huang, B.-H.~Wang, Y.~Chen, N.-H.~Wu,
+      H.-C.~Wang, L.~Giarr\'e, and P.-Y.~Kuo,
+      ``Assistive Navigation using Deep Reinforcement Learning Guiding Robot with UWB/Voice
+      Beacons and Semantic Feedbacks for Blind and Visually Impaired People,''
+      \textit{Frontiers in Robotics and AI}, 2021.
+  \end{itemize}
+\end{itemize}
+
+%-------------------------------------------------------------------- Service
+\section{Academic Service}
+\begin{itemize}
+  \item Teaching Assistant, CMU: 16-833 Robot Localization and Mapping, 16-822 Geometry-based Methods in Vision.
+  \item Teaching Assistant, NCTU: Sensing and Intelligent Systems, Human-Centric Computing Lab,
+    Introduction to Artificial Intelligence.
+  \item Reviewer for IEEE IROS, ICRA, RA-L, T-ASE.
+\end{itemize}
+
+%-------------------------------------------------------------------- Skills
+\section{Skills}
+\begin{itemize}
+  \item \textbf{Programming Languages:} C++, Python, CUDA
+  \item \textbf{Software, Middleware, and Libraries:} ROS, Docker, OpenCV, Open3D, PCL
+  \item \textbf{Deep Learning / Optimization Frameworks:} PyTorch, JAX, GTSAM
+  \item \textbf{Manufacturing:} Autodesk Fusion, KiCAD, 3D Printing, PCB Design
+\end{itemize}
+
+\end{document}
