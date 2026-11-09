@@ -1,0 +1,11 @@
+#!/bin/sh
+# Rebuild the CV PDF when its LaTeX source is part of the commit,
+# and include the fresh PDF in the same commit.
+if git diff --cached --name-only | grep -q '^assets/cv/.*\.tex$'; then
+  echo "pre-commit: building CV..."
+  pixi run cv >/dev/null 2>&1 || {
+    echo "pre-commit: CV build failed; run 'pixi run cv' to see errors." >&2
+    exit 1
+  }
+  git add assets/pdf/JuiTe_cv.pdf
+fi
